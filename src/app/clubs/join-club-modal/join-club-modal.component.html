@@ -1,0 +1,16 @@
+<div class="modal">
+    <div class="modal-content">
+      <h2>Unirse al Club</h2>
+      <form [formGroup]="joinForm" (ngSubmit)="onSubmit()">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" placeholder="Email" type="email" />
+  
+        <label for="age">Edad</label>
+        <input id="age" formControlName="age" placeholder="Edad" type="number" />
+  
+        <button type="submit" [disabled]="joinForm.invalid">Unirse</button>
+      </form>
+      <button (click)="onClose()">Cerrar</button>
+    </div>
+  </div>
+  

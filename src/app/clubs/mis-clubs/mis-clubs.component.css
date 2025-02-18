@@ -1,0 +1,68 @@
+.Mis-clubs-content h2 {
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.Mis-clubs-content {
+  text-align: center;
+}
+
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.club-card, .agregar-club {
+  width: 200px;
+  height: 250px;
+  background-color: #AF8F6F;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Añadido para alinear los elementos en columna */
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 8px;
+  border: 2px solid #825B32;
+}
+
+.agregar-club {
+  background-color: transparent;
+  border: 2px dashed #AF8F6F;
+  color: #AF8F6F;
+  cursor: pointer;
+}
+
+.club-card:hover, .agregar-club:hover {
+  background-color: #8b5a38;
+}
+
+.agregar-club p {
+  font-size: 50px;
+}
+
+.club-card p {
+  font-size: 20px;
+}
+
+.club-card button {
+  background-color: #825B32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Espaciado entre el nombre del club y el botón */
+}
+
+.club-card button:hover {
+  background-color: #6b3e26;
+}

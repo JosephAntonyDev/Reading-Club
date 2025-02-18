@@ -1,1 +1,27 @@
-<p>header-component works!</p>
+<div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a routerLink="/">Reading Club</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a routerLink="/">Mis Libros</a></li>
+          <li><a routerLink="/agregarLibro">Agregar Libro</a></li>
+          <li><a routerLink="/agregarClub">Crear Club</a></li>
+          <li><a routerLink="/misClubs">Ver Clubs</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive">
+        <i class="fa-solid fa-bars"></i>
+      </div> 
+      <div class="nav-icon-container">
+        <div class="nav-icon-profile">
+          <a routerLink="/login"><fa-icon [icon]="faUser"></fa-icon></a>
+        </div>
+        <div class="nav-icon-logout">
+          <a (click)="logout()"><fa-icon [icon]="faSignOutAlt"></fa-icon></a>
+        </div>
+      </div>
+    </header>
+  </div>
+  

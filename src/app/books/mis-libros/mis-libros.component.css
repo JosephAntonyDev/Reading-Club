@@ -1,0 +1,53 @@
+.Mis-libros-content h2 {
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.Mis-libros-content {
+    text-align: center;
+  }
+  
+  .libros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 50px;
+  }
+
+  .libro-card p{
+    font-size: 20px;
+  }
+  
+  .libro-card, .agregar-libro {
+    width: 200px;
+    height: 250px;
+    background-color: #AF8F6F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 8px;
+    border: 2px solid #825B32;
+  }
+  
+  .agregar-libro {
+    background-color: transparent;
+    border: 2px dashed #AF8F6F;
+    color: #AF8F6F;
+    cursor: pointer;
+  }
+  
+  .libro-card:hover, .agregar-libro:hover {
+    background-color: #8b5a38;
+  }
+
+  .agregar-libro p{
+    font-size: 50px;
+  }
+  

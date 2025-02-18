@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #AF8F6F;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid  #825B32;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .card h2 {
+    font-size: 2em;
+  }
+
+  .card p {
+    line-height: 9.8;
+  }
+  
+  .exit {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .chat-section {
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  h3{
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  
+  .comentario {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+
+  #comentario{
+    width: 100%;
+  }
+
+  #button-comment {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .comment-form {
+    margin-top: 30px;
+  }
+  
+  input {
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+  }
+  
+  textarea{
+    background-color: transparent;
+    border: 1 px solid gray;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+  }
+  
+  textarea:focus{
+    border-color: #825B32;
+  }
+  
+  input:focus {
+    border-color: #825B32;
+  }
+  
+  button {
+    background-color: #825B32;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  button:hover{
+    background-color: #684421;
+  }
+  
+  button:focus{
+    outline: none;
+  }
+  
+
+
+
+  /* Estilos de la modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background-color: #825B32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #684421;
+}

@@ -1,0 +1,82 @@
+.modal {
+  display: block; /* Mostrar siempre el modal */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fondo negro */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px; /* Máxima anchura para una mejor apariencia */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+h2 {
+  text-align: center;
+  color: #825B32; /* Color de encabezado */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #AF8F6F;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #AF8F6F;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #8b5a38;
+}
+
+button[type="button"], button {
+  display: block;
+  margin: 10px auto;
+  background-color: #825B32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #6b3e26;
+}

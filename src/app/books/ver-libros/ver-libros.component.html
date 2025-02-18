@@ -1,0 +1,54 @@
+<div class="container-libro" *ngIf="libro">
+  <h1>{{ libro.title }}</h1>
+
+  <div class="card-libro">
+    <h2>
+      <span *ngIf="!editMode">{{ libro.title }}</span>
+      <input *ngIf="editMode" [(ngModel)]="editableLibro.title" type="text" />
+      
+    </h2>
+
+    <p>
+      Autor: 
+      <span *ngIf="!editMode">{{ libro.autor }}</span>
+      <input *ngIf="editMode" [(ngModel)]="editableLibro.autor" type="text" />
+    </p>
+
+    <p>
+      Género: 
+      <span *ngIf="!editMode">{{ libro.genero }}</span>
+      <input *ngIf="editMode" [(ngModel)]="editableLibro.genero" type="text" />
+    </p>
+
+    <p>
+      Progreso: 
+      <span *ngIf="!editMode">{{ libro.state }}</span>
+      <input *ngIf="editMode" [(ngModel)]="editableLibro.state" type="text" />
+    </p>
+
+    <p>
+      Fecha de creación: {{ libro.date | date:'dd/MM/yyyy' }}
+    </p>
+
+    <p>
+      Reseña: 
+      <span *ngIf="!editMode">{{ libro.review }}</span>
+      <textarea *ngIf="editMode" [(ngModel)]="editableLibro.review"></textarea>
+    </p>
+    <a routerLink="/" class="exit">Salir del libro</a>
+<button *ngIf="!editMode" (click)="edit()">Editar</button>
+<button *ngIf="libro" (click)="openModal()">Eliminar</button>
+    <div *ngIf="editMode">
+      <button (click)="save()">Aceptar</button>
+      <button (click)="cancel()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" *ngIf="showModal">
+  <div class="modal-content">
+    <p>¿Estás seguro de que quieres eliminar este libro?</p>
+    <button (click)="confirmDelete()">Sí</button>
+    <button (click)="closeModal()">No</button>
+  </div>
+</div>

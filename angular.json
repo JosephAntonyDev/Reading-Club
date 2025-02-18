@@ -104,6 +104,13 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "https://github.com/JosephAntony37900/Reading-Club.git",
+            "baseHref": "https://JosephAntony37900.github.io/Reading-Club/"
+          }
         }
       }
     }

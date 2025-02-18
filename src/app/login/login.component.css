@@ -1,0 +1,72 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  /*  background-image: url('ruta-de-tu-imagen');  Añade tu imagen aquí */
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparencia al 50% */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.password-container {
+    position: relative;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #ffa05a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #ff7b2b;
+}
